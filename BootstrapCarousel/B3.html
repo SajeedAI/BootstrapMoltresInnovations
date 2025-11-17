@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        img {
+            width: 100%;
+            height: 550px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<!-- 
+| Class / Attribute                | Meaning                                  |
+| -------------------------------- | ---------------------------------------- |
+| `.carousel`                      | Main carousel wrapper                    |
+| `.slide`                         | Enables sliding animation                |
+| `.carousel-inner`                | Wrapper for all slides                   |
+| `.carousel-item`                 | Each individual slide                    |
+| `.active`                        | First slide must have this               |
+| `data-bs-interval="3000"`        | Time for each slide (3000ms = 3 seconds) |
+| `carousel-control-next` / `prev` | Next & Previous buttons                  | 
+-->
+<body>
+
+    <div class="container-fluid">
+
+        <div id="myslider" class="carousel slide" data-interval="3000" data-ride="carousel">
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1744" alt="a">
+                    <div class="carousel-caption">
+                        <p>Pic One</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1605379399843-5870eea9b74e?q=80&w=1796" alt="b">
+                    <div class="carousel-caption">
+                        <p>Pic Two</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=1740" alt="c">
+                    <div class="carousel-caption">
+                        <p>Pic Three</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#myslider" data-slide-to="0" class="active"></li>
+                <li data-target="#myslider" data-slide-to="1"></li>
+                <li data-target="#myslider" data-slide-to="2"></li>
+            </ul>
+
+            <!-- Controls -->
+            <a class="carousel-control-prev" href="#myslider" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+
+            <a class="carousel-control-next" href="#myslider" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
