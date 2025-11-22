@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moltres Innovations Footer</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Custom Footer Style (Optional) -->
+    <style>
+        .footer-section a {
+            color: #05483b;
+            text-decoration: none;
+        }
+
+        .footer-section a:hover {
+            color: sandybrown;
+        }
+
+        .footer-link {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer-link:hover {
+            text-decoration: underline;
+        }
+
+        .brand-name {
+            font-weight: bold;
+            letter-spacing: 2px;
+            line-height: 1.3;
+        }
+
+        .footer-table td {
+            padding: 4px 8px;
+        }
+
+        tr{
+            color: #05483b;
+        }
+
+        @media (max-width: 576px) {
+            .brand-name {
+                font-size: 22px;
+            }
+        }
+    </style>
+
+</head>
+
+<body style="background-color: #f8f9fa;">
+
+    <!-- ======================= YOUR FOOTER STARTS HERE ======================= -->
+
+    <!-- Footer A Start -->
+    <div class="footer-section py-5" style="color: #ddd; font-family: Arial, sans-serif;">
+        <div class="container-fluid">
+            <div class="row justify-content-center mt-4">
+
+                <!-- ABOUT US -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h4 class="footer-heading text-dark fw-bold">ABOUT US</h4>
+                    <table class="footer-table">
+                        <tbody>
+                            <tr><td><strong>Institute</strong></td><td>Moltres Innovations</td></tr>
+                            <tr><td><strong>Focus</strong></td><td>Software Development</td></tr>
+                            <tr><td><strong>Courses</strong></td><td>Java, Python, Full Stack, Cloud</td></tr>
+                            <tr><td><strong>Mission</strong></td><td>Bridging Learning & Industry Needs</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- CONNECT US -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h4 class="footer-heading text-dark fw-bold">CONNECT US</h4>
+                    <table class="footer-table">
+                        <tbody>
+                            <tr><td><i class="fa fa-envelope"></i> hr@moltresinnovations.com</td></tr>
+                            <tr><td><i class="fa fa-envelope"></i> support@moltresinnovations.com</td></tr>
+                            <tr><td><i class="fa fa-envelope"></i> sales@moltresinnovations.com</td></tr>
+                            <tr><td><i class="fa fa-envelope"></i> info@moltresinnovations.com</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- COURSES -->
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h4 class="footer-heading text-dark fw-bold">DEVELOPMENTS</h4>
+                    <table class="footer-table">
+                        <tbody>
+                            <tr><td><a href="{% url 'curriculum_java' %}">Java FullStack</a></td></tr>
+                            <tr><td><a href="{% url 'curriculum_python' %}">Python FullStack</a></td></tr>
+                            <tr><td><a href="{% url 'curriculum_mean' %}">MERN Stack</a></td></tr>
+                            <tr><td><a href="{% url 'curriculum_mean' %}">MEAN Stack</a></td></tr>
+                            <tr><td><a href="{% url 'curriculum_aws' %}">AWS</a></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- FOLLOW US -->
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h4 class="footer-heading text-dark fw-bold">FOLLOW US</h4>
+                    <table class="footer-table">
+                        <tbody>
+                            <tr><td><a href="https://www.facebook.com/people/Moltres-Innovations/61579172108786/" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></td></tr>
+                            <tr><td><a href="https://x.com/" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></td></tr>
+                            <tr><td><a href="https://www.instagram.com/moltres_innovations/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></td></tr>
+                            <tr><td><a href="https://www.linkedin.com/company/moltresinnovations/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></td></tr>
+                            <tr><td><a href="https://www.youtube.com/@moltres-innovations" target="_blank"><i class="fab fa-youtube"></i> YouTube</a></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Footer A End -->
+
+    <hr class="m-0" style="background-color: rgb(49, 47, 47);">
+
+    <!-- Footer Start -->
+    <footer class="footer mt-5 py-4" style="background-color: #1e1e1e; color: #ffffff;">
+        <div class="container text-center">
+            <div class="row align-items-center">
+
+                <!-- Links -->
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <ul class="list-unstyled">
+                        <li><a href="{% url 'terms_user' %}" class="footer-link">Terms & Conditions</a></li>
+                        <li><a href="{% url 'privacypolicy' %}" class="footer-link">Privacy Policy</a></li>
+                        <li><a href="{@ url 'refund_policy' %}" class="footer-link">Return Policy</a></li>
+                        <li><a href="{% url 'ourcommitment' %}" class="footer-link">Our Commitment</a></li>
+                        <li><a href="{% url 'online_payment' %}" class="footer-link">Online Payment</a></li>
+                    </ul>
+                </div>
+
+                <!-- Brand -->
+                <div class="col-md-6">
+                    <h3 class="brand-name">
+                        <span style="color: crimson;">MOLT</span>
+                        <span style="color: lightseagreen;">RES</span><br>
+                        <span style="color: yellow;">INNOVATIONS</span>™
+                    </h3>
+                </div>
+
+            </div>
+
+            <p class="mt-3 small">
+                MOLTRES INNOVATIONS™ - Registered under the Ministry of Corporate Affairs, Govt. of India
+            </p>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
